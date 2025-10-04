@@ -27,32 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isDashing = false;
     private bool canDash = true;
 
-    Color[] c = { Color.red, Color.green, Color.blue, Color.white };
-    public SpriteRenderer testSprite;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        player = GetComponent<Player>();
-    }
-
-    private void Update()
-    {
-        if (moveInput.sqrMagnitude > 0.0001f)
-            lastNonZeroDir = moveInput.normalized;
-
-        Vector2 dir = isDashing
-            ? rb.linearVelocity            // if you use linearVelocity, keep that
-            : moveInput;
-
-        SetColorByDirection(dir);
-    }
-
-    private void FixedUpdate()
-    {
-        if (isDashing) return;
-        rb.linearVelocity = moveInput * moveSpeed;
-    }
+    public Vector2 MoveDir => moveInput.sqrMagnitude > 0.0001f ? moveInput.normalized : lastNonZeroDir;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -72,11 +47,9 @@ public class PlayerMovement : MonoBehaviour
         canDash = false;
         isDashing = true;
 
-        // Make dash crisp (prevent damping)
         float originalDrag = rb.linearDamping;
         rb.linearDamping = 0f;
 
-        // Optional: clear momentum, then set instant dash velocity
         rb.linearVelocity = Vector2.zero;
         rb.linearVelocity = dir * dashSpeed;
 
@@ -84,24 +57,27 @@ public class PlayerMovement : MonoBehaviour
 
         isDashing = false;
         rb.linearDamping = originalDrag;
-        rb.linearVelocity = Vector2.zero; // uncomment if you want a hard stop after dash
+        rb.linearVelocity = Vector2.zero;
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
-    private void SetColorByDirection(Vector2 dir)
+    private void Awake()
     {
-        if (!testSprite) return;
-        dir.Normalize();
-
-        // 4-way bucket (cardinals). Swap colors however you like.
-        // Using c[0]=Down(red), c[1]=Up(green), c[2]=Left(blue), c[3]=Right(white)
-        Color chosen;
-        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
-            chosen = dir.x >= 0f ? c[3] : c[2];  // right vs left
-        else
-            chosen = dir.y >= 0f ? c[1] : c[0];  // up vs down
-
-        testSprite.color = chosen;
+        rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<Player>();
     }
+
+    private void Update()
+    {
+        if (moveInput.sqrMagnitude > 0.0001f)
+            lastNonZeroDir = moveInput.normalized;
+    }
+
+    private void FixedUpdate()
+    {
+        if (isDashing) return;
+        rb.linearVelocity = moveInput * moveSpeed;
+    }
+
 }
