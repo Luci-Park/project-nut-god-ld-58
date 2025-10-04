@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5721101147738155963}
   - component: {fileID: 3473957575753156993}
   - component: {fileID: 572879375521278839}
+  - component: {fileID: 6016317037397539791}
   - component: {fileID: 2480906413532213680}
   - component: {fileID: 489759095831000752}
   m_Layer: 0
@@ -153,6 +154,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6016317037397539791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648502976381956317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc60635c1feff8a4ba6aabafd9b6ee9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!114 &2480906413532213680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
-  dashSpeed: 10
+  dashSpeed: 20
   dashTime: 0.15
   dashCooldown: 0.6
   attackCooldown: 0.5
