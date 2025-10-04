@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7414547752116494272}
+  - component: {fileID: 2781923413037813719}
   m_Layer: 0
   m_Name: Attack Swoosh
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 4665592739202053572}
   m_Father: {fileID: 5721101147738155963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.91}
+--- !u!114 &2781923413037813719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363504514817004857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59e714b82f918140a257800aabe06e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TailSwipe
+  radius: 1
 --- !u!1 &1648502976381956317
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +243,19 @@ MonoBehaviour:
     m_ActionId: ce3af86a-3583-48e8-9555-78abc924db79
     m_ActionName: 'Player/Look[/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2781923413037813719}
+        m_TargetAssemblyTypeName: TailSwipe, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 3e2eb4f8-4b09-4ad3-86b2-e563d916fe50
     m_ActionName: 'Player/Fire[/Mouse/leftButton]'
   - m_PersistentCalls:
@@ -305,7 +331,7 @@ GameObject:
   - component: {fileID: 5490238750021301142}
   m_Layer: 0
   m_Name: Attack Effect
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
