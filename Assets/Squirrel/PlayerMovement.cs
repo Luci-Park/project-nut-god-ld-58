@@ -15,9 +15,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashTime = 0.15f;
     [SerializeField] private float dashCooldown = 0.6f;
 
-    [Header("Attack")]
-    [SerializeField] private float attackCooldown = 0.5f;
-
     private Player player;
 
     private Rigidbody2D rb;
