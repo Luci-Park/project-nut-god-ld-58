@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class EnemyDetectCollider : MonoBehaviour
+{
+    private Enemy parentEntity;
+    
+    private void Awake()
+    {
+        parentEntity = GetComponentInParent<Enemy>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Player player = other.GetComponent<Player>();
+            Debug.Assert(player && parentEntity);
+            parentEntity.OnDetect(player);
+        }
+    }
+
+}

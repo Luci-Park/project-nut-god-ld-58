@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Discover_Left
+  m_Name: DiscoverLeft
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -43,11 +43,11 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 169802553, guid: a5ada2f01187ccd4990a9d4cd22e805e, type: 3}
-    - time: 0.083333336
+    - time: 0.05
       value: {fileID: -138184958, guid: a5ada2f01187ccd4990a9d4cd22e805e, type: 3}
-    - time: 0.25
+    - time: 0.18333334
       value: {fileID: -513217354, guid: a5ada2f01187ccd4990a9d4cd22e805e, type: 3}
-    - time: 0.6666667
+    - time: 0.41666666
       value: {fileID: -513217354, guid: a5ada2f01187ccd4990a9d4cd22e805e, type: 3}
     attribute: m_Sprite
     path: 
@@ -89,7 +89,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.43333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -130,7 +130,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.6666667
+  - time: 0.41666666
     functionName: ChangeState
     data: 
     objectReferenceParameter: {fileID: 0}
