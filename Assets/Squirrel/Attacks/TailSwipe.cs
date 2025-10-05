@@ -12,7 +12,7 @@ public class TailSwipe : MonoBehaviour
 
     [SerializeField] private float attackDuration = 0.3f;
 
-    private bool canSwipe = true;
+    [SerializeField] private bool canSwipe = true;
     void Awake()
     {
         player = GetComponentInParent<Player>();
@@ -65,5 +65,12 @@ public class TailSwipe : MonoBehaviour
         }
     }
 
-
+    public bool GetCanSwipe()
+    {
+        return this.canSwipe;
+    }
+    public void SetCanSwipe(bool swipeable)
+    {
+        this.canSwipe = false;
+    }
 }
