@@ -13,11 +13,11 @@ public class Enemy : MonoBehaviour
         player.OnAttacked(3);
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if(collider.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player")
         {
-            Player player = collider.GetComponent<Player>();
+            Player player = other.gameObject.GetComponent<Player>();
             Debug.Assert(player);
             Attack(player);
         }
