@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Raccoon : Enemy
 {
-    private enum State { Idle, Attack }
+    private enum State { Idle, Discover, Attack }
     [SerializeField] private float[] idleWalkTimeMinMax = { 0.1f, 3f};
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private RacconSwipe swipe;
@@ -23,10 +23,13 @@ public class Raccoon : Enemy
 
     public override void OnDetect(Player player)
     {
-        targetPlayer = player;
-        LookDir = (targetPlayer.transform.position - transform.position).normalized;
-        animator.SetTrigger("Discover");
-        ChangeState(State.Attack);
+        if (State.Idle == state)
+        {
+            targetPlayer = player;
+            LookDir = (targetPlayer.transform.position - transform.position).normalized;
+            animator.SetTrigger("Discover");
+            ChangeState(State.Discover);
+        }
     }
     /// <summary>
     /// for animation purposes
