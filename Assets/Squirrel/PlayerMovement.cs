@@ -22,7 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
-    private Vector2 lastNonZeroDir = Vector2.right;
+    private Vector2 lastNonZeroDir = Vector2.down;
+
+    private Animator animator;
 
     private bool isDashing = false;
     private bool canDash = true;
@@ -32,13 +34,15 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+        if (moveInput.sqrMagnitude < 0.0001f)
+            moveInput = Vector2.zero;
     }
 
     public void OnRoll(InputAction.CallbackContext context)
     {
         if (!context.performed || !canDash) return;
 
-        Vector2 dir = moveInput.sqrMagnitude > 0.0001f ? moveInput.normalized : lastNonZeroDir;
+        Vector2 dir = moveInput != Vector2.zero ? moveInput.normalized : lastNonZeroDir;
         StartCoroutine(DashRoutine(dir));
     }
 
@@ -66,12 +70,19 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (moveInput.sqrMagnitude > 0.0001f)
+        if (moveInput != Vector2.zero)
             lastNonZeroDir = moveInput.normalized;
+        animator.SetFloat("LastInput.X", lastNonZeroDir.x);
+        animator.SetFloat("LastInput.Y", lastNonZeroDir.y);
+        animator.SetFloat("Input.X", moveInput.x);
+        animator.SetFloat("Input.Y", moveInput.y);
+        animator.SetBool("IsMoving", moveInput != Vector2.zero);
+
     }
 
     private void FixedUpdate()

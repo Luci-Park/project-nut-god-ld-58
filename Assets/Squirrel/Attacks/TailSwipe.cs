@@ -8,8 +8,7 @@ public class TailSwipe : MonoBehaviour
     [SerializeField] private int power = 2;
     [SerializeField] private float radius = 0.1f;
  
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         player = GetComponentInParent<Player>();
     }
@@ -21,8 +20,9 @@ public class TailSwipe : MonoBehaviour
 
         float angle = Mathf.Atan2(attackDir.y, attackDir.x) * Mathf.Rad2Deg; // face velocity
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
         transform.position = player.transform.position + (Vector3)(attackDir * radius);
+
+        player.Animator.SetTrigger("TailSwipe");
     }
 
     private void Attack(Enemy enemy)
