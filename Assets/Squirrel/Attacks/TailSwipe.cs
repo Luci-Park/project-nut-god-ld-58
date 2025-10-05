@@ -8,7 +8,6 @@ public class TailSwipe : MonoBehaviour
 
     [SerializeField] private GameObject hitboxObject;
     [SerializeField] private int power = 2;
-    [SerializeField] private float radius = 2f;
 
     [SerializeField] private float attackDuration = 0.3f;
 
