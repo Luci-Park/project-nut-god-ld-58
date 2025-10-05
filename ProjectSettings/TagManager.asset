@@ -43,6 +43,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 1419299057
+    locked: 0
+  - name: WalkOver
+    uniqueID: 268660753
+    locked: 0
+  - name: Collision
+    uniqueID: 3798273067
+    locked: 0
+  - name: Player
+    uniqueID: 2292455887
+    locked: 0
+  - name: WalkUnder
+    uniqueID: 1745657689
+    locked: 0
+  - name: Decor
+    uniqueID: 1801667173
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1
