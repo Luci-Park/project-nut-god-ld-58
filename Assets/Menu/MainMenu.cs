@@ -10,9 +10,9 @@ namespace Menu
             SceneManager.LoadSceneAsync(1);
         }
 
-        public void QuitGame()
+        public void GameCredits()
         {
-            Application.Quit();
+            SceneManager.LoadSceneAsync(2);
         }
     }
 }
