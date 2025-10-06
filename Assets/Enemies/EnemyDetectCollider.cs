@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyDetectCollider : MonoBehaviour
 {
-    private Enemy parentEntity;
+    protected Enemy parentEntity;
     
     private void Awake()
     {

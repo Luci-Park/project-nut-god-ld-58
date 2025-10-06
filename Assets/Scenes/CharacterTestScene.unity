@@ -435,6 +435,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7048264174369624926, guid: 9b0ec81a77a8387458360a42a7e0d6e1, type: 3}
+      propertyPath: 'idleStandTimeMinMax.Array.data[0]'
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7048264174369624926, guid: 9b0ec81a77a8387458360a42a7e0d6e1, type: 3}
+      propertyPath: 'idleStandTimeMinMax.Array.data[1]'
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
