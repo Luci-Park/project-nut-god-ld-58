@@ -31,6 +31,11 @@ public class Turkey : Enemy
     public void OnAttackFinished()
     {
         attack.OnAttackEnd();
+        attack.OnAttackStart(targetPlayer);
+    }
+    public void Shoot()
+    {
+        attack.Shoot();
     }
 
     private void ChangeState(State newState)

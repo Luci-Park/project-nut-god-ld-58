@@ -460,6 +460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turkey
       objectReference: {fileID: 0}
+    - target: {fileID: 1149927907049822773, guid: 9b0ec81a77a8387458360a42a7e0d6e1, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4001747657431016130, guid: 9b0ec81a77a8387458360a42a7e0d6e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
