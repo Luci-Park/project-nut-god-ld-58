@@ -4,7 +4,7 @@ public class EnemyDetectCollider : MonoBehaviour
 {
     protected Enemy parentEntity;
     
-    private void Awake()
+    protected virtual void Awake()
     {
         parentEntity = GetComponentInParent<Enemy>();
     }
