@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f9dad6703ccc3142abf6d2b91cc9f17
-      internalID: 1479189152
+      spriteID: b8b5e0be59bf6a840828c6687b648f16
+      internalID: -1397409251
       vertices: []
       indices: 
       edges: []
@@ -136,7 +136,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -147,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4d040ffe8b378418eda370e97e1cd0
-      internalID: -163085493
+      spriteID: a573efec3540fcb4cb1c6a8b862c0222
+      internalID: -23282731
       vertices: []
       indices: 
       edges: []
@@ -158,6 +158,28 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dbc2956ada7f341ac7cabc8a5bae16
+      internalID: 40185512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turkey_3
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -169,30 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86191b8ee3d6c2c47ae026e4db0ddbd7
-      internalID: -1702559304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turkey_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c1e66edc9d2b6545be99ca788a06f42
-      internalID: -1107458018
+      spriteID: 451112359c174074d9298c870d635844
+      internalID: 1464548468
       vertices: []
       indices: 
       edges: []
@@ -202,6 +202,72 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a0faad2c92d047a425bda5905fc59
+      internalID: -1409398213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turkey_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6be577cf8cb95b42aefaad609656b27
+      internalID: 124657633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turkey_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4b663fc9bffe24387c5b2a6bdee72d
+      internalID: -1533849614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turkey_7
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 32
         width: 32
         height: 32
@@ -213,14 +279,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d659d07a53ea594aafec68d675c08a9
-      internalID: 4552998
+      spriteID: f5126a548fde7124cbd8501e59a2b954
+      internalID: -2110120862
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turkey_5
+      name: turkey_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf53aaf262ac2eb4f9d15c1ac122e3bc
+      internalID: 1929356741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: turkey_9
       rect:
         serializedVersion: 2
         x: 64
@@ -235,36 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82f5b24dd0b30934699e47158c68fa3d
-      internalID: 1934311459
+      spriteID: 1d163bf5930587e468964812410ac256
+      internalID: 1728464958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turkey_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e25389344409127469c0883f33730fa4
-      internalID: 1065964671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turkey_7
+      name: turkey_10
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68c294673dd61e46b97771c686b2332
-      internalID: 1289900605
+      spriteID: fedeb4f6dfb7e774bb719e98dc97e161
+      internalID: -1870825964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: turkey_8
+      name: turkey_11
       rect:
         serializedVersion: 2
         x: 32
@@ -301,30 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a3b8b424a6ad4349b92d6291971320b
-      internalID: 417820855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: turkey_9
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06343cddb5265824bbe8cf16e863bfdd
-      internalID: 1992919034
+      spriteID: 805564990a83f784c9c779c7a533f498
+      internalID: 1594094974
       vertices: []
       indices: 
       edges: []
@@ -333,7 +377,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6e407c57ee971e048bdc254bb25dc72f
+    spriteID: d74244167d8ec934db06109591aad4c9
     internalID: 0
     vertices: []
     indices: 
@@ -345,16 +389,18 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      turkey_0: 1479189152
-      turkey_1: -163085493
-      turkey_2: -1702559304
-      turkey_3: -1107458018
-      turkey_4: 4552998
-      turkey_5: 1934311459
-      turkey_6: 1065964671
-      turkey_7: 1289900605
-      turkey_8: 417820855
-      turkey_9: 1992919034
+      turkey_0: -1397409251
+      turkey_1: -23282731
+      turkey_10: -1870825964
+      turkey_11: 1594094974
+      turkey_2: 40185512
+      turkey_3: 1464548468
+      turkey_4: -1409398213
+      turkey_5: 124657633
+      turkey_6: -1533849614
+      turkey_7: -2110120862
+      turkey_8: 1929356741
+      turkey_9: 1728464958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
