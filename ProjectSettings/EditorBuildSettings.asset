@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/InitialCutscene.unity
     guid: 00cf8ea16f888f143bc9a8c3f597d3b3
   - enabled: 1
-    path: Assets/Scenes/CharacterTestScene.unity
-    guid: 6ea305100ae3eec4996dfc73ee63e67b
+    path: Assets/Scenes/NutopiaGameScene.unity
+    guid: e7162ca701dc1384d82f0f7187b516dc
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: eb3063ad83668e14e8297b9e1d8546f4
