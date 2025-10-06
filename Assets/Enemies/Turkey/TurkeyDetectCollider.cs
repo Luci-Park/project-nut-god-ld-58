@@ -19,9 +19,9 @@ public class TurkeyDetectCollider : EnemyDetectCollider
         Vector2 offset = lineOfSightCollider.offset;
 
         if (sp.flipX)
-            offset.x = 1.3f;
+            offset.x = 3.5f;
         else
-            offset.x = -1.3f;
+            offset.x = -3.5f;
         lineOfSightCollider.offset = offset;
     }
 }
